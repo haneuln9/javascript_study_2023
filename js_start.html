@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>js.start</title>
+    <script>
+        /*내부스크립트 위치(head)*/
+    </script>
+</head>
+<body>
+    <!--모든 태그 작성위치-->
+    <p>1+1</p>
+    <script>
+        /*내부 스크립트 위치 (body)*/
+        //한줄 주석처리 가능
+        //객체 지향언어 =자바스크립트
+        //var 변수명 대입연산자 대입데이터
+        var a = 10;
+        var b = 20;
+        console.log (a)
+        document.write(b);
+        //화면에 변수를 출력한다.
+        //콘솔 창에 변수를 출력한다.
+        //객체(콘솔), 속성(x) , 이벤트(x) , 메서드(변수출력)
+        //객체.속성
+        //객체.메서드(실행값)
+        //객체.속성.메서드()
+        //데이터 타입 =Striing(문자 )Number(숫자)
+        console.log('1+1');//따움표 묶인 데이터는=문자
+        console.log(1+1);
+        //2개 이상 데이터 묶어서 사용하기
+        //숫자+숫자=숫자
+        //문자+문자=문자
+        //문자+숫자=문자
+        //-----------------------
+        var box1 = 10;
+        var box2 = '10';
+        var box3 = 20;
+        var box4 = 1;
+        
+        console.log(box1, box2, box3, box4);
+        console.log(box1+box2+box3+box4);
+        console.log(typeof (box1+box3));
+        document.write(typeof (box1+box3));
+        console.log('box1='+box1)
+        console.log('box2='+box2)
+        console.log('box3='+box3)
+        console.log('box4='+box4)
+        //box1+box3=30
+        console.log('box1+box3='+(box1+box3));
+        //box1+box3+box4=31
+        //box1+box2=1010
+        //box3+box4=21
+        console.log('box1+box3+box4='+(box1+box3+box4))
+        console.log('box1+box2='+box1+box2)
+        console.log('box3+box4='+(box3+box4))
+        //2*1=2
+        //2*2=4
+        console.log('2*1='+(2*1))
+        console.log('2*2='+(2*2))
+        console.log('--------------')
+
+        var str1 ='자바스크립트';/*str은 stringd의 약자*/
+        console.log(typeof(str1))//string
+        //length 문자열 길이 속성
+        console.log(str1.length);
+        //str1.length : 6
+        console.log('str1.length:'+str1.length)
+    </script>
+</body>
+</html>
