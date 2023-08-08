@@ -1,0 +1,159 @@
+main {
+    width:1200px; margin:0 auto; background: aqua;
+}
+/*공통제목 css*/
+main section {
+    text-align:center;
+}
+main section .category {padding-top: 20px;}
+main section .category::after{
+    display:block; content:''; background: #aaa;
+    height:2px; width:20px; margin:20px auto 0;
+}
+main section h1 {
+    font-size:1.5rem;
+    font: weight 600px;;
+    padding:25px 0;
+    letter-spacing:-0.02rem;
+}
+main section .contents {
+    margin-bottom: 30px;
+    color:#888;
+}
+/*카히스토리 영상*/
+/*카히스토리 영상 =탭제목 내용*/
+main #video .tab_title {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+}
+main #video .tab_title a {
+    display: block;
+    /* background: red; */
+    width:100px;
+    padding:20px 0 ;
+}
+main #video .tab_title a.active {
+    border-bottom:5px solid #189bfa;
+}
+
+/* main #video .tab_title a.active:hover {border-bottom:5px solid #189bfa;} */
+/* main #video .tab_title a:nth-child(2):hover {border-bottom:5px solid #189bfa;} */
+
+main #video .tab_contents {}
+main #video .tab_contents .tab_c1 {
+    background: pink;
+    /* padding:10px 0; */
+    /* margin-top:10px; */
+    position: relative;
+}
+main #video .tab_contents .tab_c1 video {width:80%; margin:0 auto;}
+main #video .tab_contents .tab_c1 img {
+    width:200px;
+    position:absolute;
+    right:50px; top:280px;
+}
+main #video .tab_contents .tab_c2 {}
+main #video .tab_contents .tab_c2 img {width:80%; margin:0 auto;}
+main #video .tab_contents .active {}
+/*----------------------------------------*/
+/*---------------------탭 시작--------------------------*/
+main #menu .tab_title {
+    background: yellow;
+    display:flex;
+    justify-content:center;
+    border-bottom:1px solid #888;
+}
+main #menu .tab_title a {
+    width:150px; padding:20px 0; margin-right:10px;
+    position:relative; bottom:-1px;
+    background: #fff;
+    border:1px solid #ccc;
+    border-bottom:1px solid #888;
+}
+main #menu .tab_title a:last-child {margin-right:0;}
+main #menu .tab_title .active {
+    border:1px solid #888 ;
+    border-top:3px solid #189bfa ;
+    border-bottom:1px solid #fff;
+}
+/*--------------------------------------*/
+main #menu .tab_contents {}
+main #menu .tab_contents .tab_c1 {
+    display:flex;
+    /* flex-flow: row nowrap;
+    justify-content: space-between; */
+    text-align:left;
+}
+/*----------------left----------------------*/
+main #menu .tab_contents .tab_c1 .left {
+    width:50%;}
+main #menu .tab_contents .tab_c1 .left h2 {
+    font-size:1.7rem;
+    color:#189bfa;
+    margin:20px 0;
+}
+main #menu .tab_contents .tab_c1 .left p {
+    margin:20px 0;
+    line-height:1.5;
+    font-size:1.333rem;
+}
+main #menu .tab_contents .tab_c1 .left p img {width:100%;}
+main #menu .tab_contents .tab_c1 .left p .move_user {
+    color:#189bfa
+}
+/*-----------------------right------------------*/
+main #menu .tab_contents .tab_c1 .right {
+    background:yellowgreen;
+    width:50%;
+}
+main #menu .tab_contents .tab_c1 .right h3 {
+    font-size:1.5rem;
+    /* text-align:left; */
+    margin: 21px 0;
+}
+main #menu .tab_contents .tab_c1 .right ul {
+    background:orange;
+    text-align:left;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
+    padding-left:10px;
+}
+main #menu .tab_contents .tab_c1 .right ul li {
+    padding:30px 0 40px 80px;
+    display:flex;
+    flex-flow:column wrap;
+}
+main #menu .tab_contents .tab_c1 .right ul li p {
+    font-size:1.7rem;
+    font-weight:600;
+    line-height:1.7rem;
+}
+main #menu .tab_contents .tab_c1 .right ul li p em {
+    font-size:1.333rem;
+}
+main #menu .tab_contents .tab_c1 .right ul li span {
+    color:#189bfa;
+    font-weight:600;
+    margin-bottom:3px;
+}
+
+main #menu .tab_contents .tab_c1 .right ul li:nth-child(1) {
+    background:url(../carhistory_image/menu-1-1.png)no-repeat;
+    background-position:left;
+}
+main #menu .tab_contents .tab_c1 .right ul li:nth-child(2) {
+    background:url(../carhistory_image/menu-1-2.png)no-repeat;
+    background-position:left;
+    border-top:1px dashed #aaa;
+    border-bottom:1px dashed #aaa;
+}
+main #menu .tab_contents .tab_c1 .right ul li:nth-child(3) {
+    background:url(../carhistory_image/menu-1-3.png)no-repeat;
+    background-position:left;
+}
+/*----------------------------------*/
+main #menu .tab_contents .tab_c2 {height:400px;}
+main #menu .tab_contents .tab_c3 {height:400px;}
+main #menu .tab_contents .tab_c4 {height:400px;}
