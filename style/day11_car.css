@@ -1,5 +1,5 @@
 main {
-    width:1200px; margin:0 auto; background: aqua;
+    /* width:1200px; margin:0 auto; background: aqua; */
 }
 /*공통제목 css*/
 main section {
@@ -33,16 +33,14 @@ main #video .tab_title a {
     width:100px;
     padding:20px 0 ;
 }
+/*탭 제목 활성화 디자인 + js class 호출용*/
 main #video .tab_title a.active {
     border-bottom:5px solid #189bfa;
 }
-
-/* main #video .tab_title a.active:hover {border-bottom:5px solid #189bfa;} */
-/* main #video .tab_title a:nth-child(2):hover {border-bottom:5px solid #189bfa;} */
-
+/*-----------------------------------------------------------------------------------*/
 main #video .tab_contents {}
 main #video .tab_contents .tab_c1 {
-    background: pink;
+    /* background: pink; */
     /* padding:10px 0; */
     /* margin-top:10px; */
     position: relative;
@@ -59,7 +57,7 @@ main #video .tab_contents .active {}
 /*----------------------------------------*/
 /*---------------------탭 시작--------------------------*/
 main #menu .tab_title {
-    background: yellow;
+    /* background: yellow; */
     display:flex;
     justify-content:center;
     border-bottom:1px solid #888;
@@ -72,6 +70,9 @@ main #menu .tab_title a {
     border-bottom:1px solid #888;
 }
 main #menu .tab_title a:last-child {margin-right:0;}
+
+/*탭 제목 활성화 디자인 + js class 호출용*/
+
 main #menu .tab_title .active {
     border:1px solid #888 ;
     border-top:3px solid #189bfa ;
@@ -104,7 +105,7 @@ main #menu .tab_contents .tab_c1 .left p .move_user {
 }
 /*-----------------------right------------------*/
 main #menu .tab_contents .tab_c1 .right {
-    background:yellowgreen;
+    /* background:yellowgreen; */
     width:50%;
 }
 main #menu .tab_contents .tab_c1 .right h3 {
@@ -113,7 +114,7 @@ main #menu .tab_contents .tab_c1 .right h3 {
     margin: 21px 0;
 }
 main #menu .tab_contents .tab_c1 .right ul {
-    background:orange;
+    /* background:orange; */
     text-align:left;
     display:flex;
     flex-flow:column nowrap;
