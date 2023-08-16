@@ -1,0 +1,77 @@
+header {
+    width:100%; height:100px;
+    background: rgba(255, 255, 255,0.5);
+    position:fixed; left:0; top:0; z-index:999;
+    padding:0 30px;
+    display:flex; flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items:center;
+    }
+header h1 {}
+header h1 a {}
+header h1 a img {}
+header nav {}
+header nav a {white-space:nowrap;}
+header nav .nav_bg {
+    background:#fff;
+    position:absolute; width:100%; height:600px;
+    left:0;
+    z-index:100;
+}
+header nav .gnb {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+}
+header nav .gnb > li {
+    position:relative;
+}
+header nav .gnb > li > a {
+
+    line-height:100px;
+    padding-right:80px;
+    font-weight: 700;
+    font-size:1.9rem;
+}
+header nav .gnb > li > .sub1 {
+    position: absolute; width:100%; height:600px;
+    z-index:300;
+    display:flex;
+    flex-flow:column nowrap;
+}
+header nav .gnb > li > .sub1 > li {}
+header nav .gnb > li > .sub1 > li > a {
+    padding:20px 0 20px 5px;
+    display:inline-block;
+    font-size:1.333rem;
+    font-weight:700;
+}
+header nav .gnb > li > .sub1 > li .sub2 {}
+header nav .gnb > li > .sub1 > li > .sub2 li {}
+header nav .gnb > li > .sub1 > li> .sub2 li a {
+    color:#777; padding:10px 0 10px 10px; 
+    display:block;
+    border-bottom:1px dashed #888;
+    font-size:1.333rem;
+    font-weight:700;
+}
+header nav .gnb > li > .sub1 a:hover {
+    color:rgb(7, 104, 72) !important;
+}
+
+header #m_nav {
+    width:32px; height:32px;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-between;
+}
+header #m_nav span {
+    height:7px; background:rgb(7, 104, 72);
+}
+header #m_nav span:first-child {}
+header #m_nav span:nth-child(2) {}
+header #m_nav span:last-child {}
+main {
+    height: 100vh;
+    background:url(../unid/bg.jpg);
+}
